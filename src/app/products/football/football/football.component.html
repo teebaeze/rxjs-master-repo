@@ -1,0 +1,14 @@
+<div class="layout-column align-items-center mt-50">
+    <section class="layout-row align-items-center justify-content-center p-2" data-test-id="page-number-buttons">
+      <button class="btn btn-success m-2 " *ngFor="let page of totalPages" (click)="loadDetailsPerPage(page +1)">
+        {{page + 1}}
+      </button>
+    </section>
+  
+    <ul class="mt-50 styled" data-test-id="football-competitions" >
+      <li class="slide-up-fade-in py-10" *ngFor="let comp of competetionDetails" >
+        Competition Won by {{ comp.name}} in the year {{comp.year}}
+      </li>
+    </ul>
+  </div>
+  

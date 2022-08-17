@@ -8,6 +8,7 @@ import { ProductDetailComponent } from './product-list-alt/product-detail.compon
 
 import { SharedModule } from '../shared/shared.module';
 import { ProductListAltComponent } from './product-list-alt/product-list-alt.component';
+import { FootballComponent } from './football/football/football.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { ProductListAltComponent } from './product-list-alt/product-list-alt.com
     ProductListComponent,
     ProductShellComponent,
     ProductListAltComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    FootballComponent
   ]
 })
 export class ProductModule { }

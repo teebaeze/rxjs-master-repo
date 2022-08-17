@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 
 import { WelcomeComponent } from './home/welcome.component';
 import { PageNotFoundComponent } from './page-not-found.component';
+import { FootballComponent } from './products/football/football/football.component';
 import { LentCalcComponent } from './products/length-caldulator/lent-calc/lent-calc.component';
 import { TempComponent } from './temperature/temp/temp.component';
 import { WeatherComponent } from './weather/weather/weather.component';
@@ -14,6 +15,7 @@ import { WeatherComponent } from './weather/weather/weather.component';
       {path: 'temp', component: TempComponent },
       {path: 'weather', component: WeatherComponent},
       {path: 'length', component: LentCalcComponent},
+      {path:'football', component: FootballComponent},
       {
         path: 'products',
         loadChildren: () =>
