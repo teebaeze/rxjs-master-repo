@@ -1,0 +1,24 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <div class="search-box input-group p-2 w-50">
+        <input type="text" [(ngModel)]="search" formControlName="search" class="mr-3 search form-control input-group-sm">
+        <button class="submit ml-2 btn btn-primary" type="submit">Search</button>
+    </div>
+</form>
+<div class="result card mt-4 p-3 w-50" >
+    <p>Searched City : {{search}} </p>
+    <p class="temperature"> Temperature: {{weatherResult.weather}} </p>
+    <p class="wind"> Wind: {{weatherResult.status[0]}} </p>
+    <p class="Humidity">Humidity: {{weatherResult.status[1]}} </p>
+    <!-- <div class="card-body" *ngFor="let weather of weatherResult.data">
+        <p>City: {{weather.name}}</p>
+        <p>
+           Temperature: {{weather.weather}} 
+        </p>
+        <p>
+           {{weather.status[0]}} 
+         </p>
+         <p>
+            Humidity: {{weather.status[1]}} 
+         </p>
+    </div> -->
+</div>

@@ -1,0 +1,18 @@
+<form style="width: 30%;">
+    <div class="form-group" >
+      <label for="exampleInputEmail1">Celcius</label>
+      <input type="number" [(ngModel)]="c" (ngModelChange)="calcC($event)" name="cee" [ngModelOptions]="{standalone: true}"  class="form-control" id="celcius" aria-describedby="celcius" placeholder="Enter Temperature">
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Fahrenheit</label>
+      <input [(ngModel)]="v" (ngModelChange)="calcF($event)" name="vee" type="number" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-check">
+        Fahrenheit: {{v}}
+        Celcius: {{c}}
+      <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+      <!-- <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+    </div>
+    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+  </form>
